@@ -1,0 +1,3 @@
+/Users/ihorlenko/CLionProjects/handy_algorithms/cmake-build-debug/CMakeFiles/handy_algorithms.dir
+/Users/ihorlenko/CLionProjects/handy_algorithms/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ihorlenko/CLionProjects/handy_algorithms/cmake-build-debug/CMakeFiles/rebuild_cache.dir
