@@ -1,0 +1,40 @@
+#include <iostream>
+#include <queue>
+#include <vector>
+using namespace std;
+
+int main() {
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+
+    vector<vector<int>> graph;
+    int n, start;
+
+    cin >> n >> start;
+
+    queue<int> queue;
+    queue.push(start);
+
+    vector<bool> used(n);
+    used[start] = true;
+
+    vector<int> dist(n), parents(n);
+    parents[start] = -1;
+
+    while (!queue.empty()) {
+        int vertix = queue.front();
+        queue.pop();
+
+        for (size_t i = 0; i < graph[vertix].size(); ++i) {
+            int neighbour = graph[vertix][i];
+            if (!used[neighbour]) {
+                used[neighbour] = true;
+                queue.push(neighbour);
+                dist[neighbour] += 1;
+                parents[neighbour] = vertix;
+            }
+        }
+    }
+
+}
