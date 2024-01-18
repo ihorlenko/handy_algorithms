@@ -7,4 +7,5 @@ add_executable(handy_algorithms
         bfs
         LICENSE
         README.md
-        main.cpp)
+        main.cpp
+        segment_tree.cpp)

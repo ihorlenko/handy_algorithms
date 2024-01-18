@@ -55,6 +55,12 @@ build CMakeFiles/handy_algorithms.dir/main.cpp.o: CXX_COMPILER__handy_algorithms
   OBJECT_DIR = CMakeFiles/handy_algorithms.dir
   OBJECT_FILE_DIR = CMakeFiles/handy_algorithms.dir
 
+build CMakeFiles/handy_algorithms.dir/segment_tree.cpp.o: CXX_COMPILER__handy_algorithms_unscanned_Debug /Users/ihorlenko/CLionProjects/handy_algorithms/segment_tree.cpp || cmake_object_order_depends_target_handy_algorithms
+  DEP_FILE = CMakeFiles/handy_algorithms.dir/segment_tree.cpp.o.d
+  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/handy_algorithms.dir
+  OBJECT_FILE_DIR = CMakeFiles/handy_algorithms.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target handy_algorithms
@@ -63,7 +69,7 @@ build CMakeFiles/handy_algorithms.dir/main.cpp.o: CXX_COMPILER__handy_algorithms
 #############################################
 # Link the executable handy_algorithms
 
-build handy_algorithms: CXX_EXECUTABLE_LINKER__handy_algorithms_Debug CMakeFiles/handy_algorithms.dir/main.cpp.o
+build handy_algorithms: CXX_EXECUTABLE_LINKER__handy_algorithms_Debug CMakeFiles/handy_algorithms.dir/main.cpp.o CMakeFiles/handy_algorithms.dir/segment_tree.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
   OBJECT_DIR = CMakeFiles/handy_algorithms.dir
   POST_BUILD = :
